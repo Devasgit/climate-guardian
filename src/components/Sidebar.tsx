@@ -16,6 +16,7 @@ const navItems = [
   { id: "reports", label: "Reports", icon: FileText },
   { id: "trends", label: "Trends", icon: TrendingUp },
   { id: "officers", label: "Officers", icon: Users },
+  { id: "settings", label: "Settings", icon: Settings },
 ];
 
 export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
@@ -64,13 +65,7 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
 
       {/* Bottom */}
       <div className="px-4 py-4 border-t space-y-2" style={{ borderColor: "hsl(var(--sidebar-border))" }}>
-        <button
-          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-medium transition-colors hover:bg-sidebar-accent"
-          style={{ color: "hsl(var(--sidebar-foreground))" }}
-        >
-          <Settings className="w-4 h-4" />
-          Settings
-        </button>
+
         <div className="px-3 py-2 rounded-md" style={{ background: "hsl(var(--sidebar-accent))" }}>
           <div className="text-xs font-semibold" style={{ color: "hsl(var(--sidebar-foreground))" }}>
             Rajesh Kumar

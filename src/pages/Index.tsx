@@ -12,6 +12,9 @@ import { StatsBar } from "@/components/StatsBar";
 import { RecentAssessments } from "@/components/RecentAssessments";
 import { PortfolioView } from "@/components/PortfolioView";
 import { ReportsView } from "@/components/ReportsView";
+import { TrendsView } from "@/components/TrendsView";
+import { OfficersView } from "@/components/OfficersView";
+import { SettingsView } from "@/components/SettingsView";
 import { PropertyAssessmentInput, ClimateRiskReport } from "@/types/climate";
 import {
   calculateFactorScores,
@@ -231,17 +234,21 @@ export default function Index() {
             </div>
           )}
 
-          {(activeTab === "trends" || activeTab === "officers") && (
-            <div className="max-w-[1400px] mx-auto flex items-center justify-center h-64">
-              <div className="text-center">
-                <div className="text-3xl mb-3">🏗️</div>
-                <h3 className="text-lg font-semibold text-foreground mb-1">
-                  {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Module
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Connect backend to unlock database-backed {activeTab} management
-                </p>
-              </div>
+          {activeTab === "trends" && (
+            <div className="max-w-[1400px] mx-auto">
+              <TrendsView />
+            </div>
+          )}
+
+          {activeTab === "officers" && (
+            <div className="max-w-[1400px] mx-auto">
+              <OfficersView />
+            </div>
+          )}
+
+          {activeTab === "settings" && (
+            <div className="max-w-[1400px] mx-auto">
+              <SettingsView />
             </div>
           )}
         </main>
