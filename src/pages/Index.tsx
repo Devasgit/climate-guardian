@@ -10,6 +10,8 @@ import { ProjectionChart } from "@/components/ProjectionChart";
 import { LendingPanel } from "@/components/LendingPanel";
 import { StatsBar } from "@/components/StatsBar";
 import { RecentAssessments } from "@/components/RecentAssessments";
+import { PortfolioView } from "@/components/PortfolioView";
+import { ReportsView } from "@/components/ReportsView";
 import { PropertyAssessmentInput, ClimateRiskReport } from "@/types/climate";
 import {
   calculateFactorScores,
@@ -217,7 +219,19 @@ export default function Index() {
             </div>
           )}
 
-          {(activeTab === "portfolio" || activeTab === "reports" || activeTab === "trends" || activeTab === "officers") && (
+          {activeTab === "portfolio" && (
+            <div className="max-w-[1400px] mx-auto">
+              <PortfolioView />
+            </div>
+          )}
+
+          {activeTab === "reports" && (
+            <div className="max-w-[1400px] mx-auto">
+              <ReportsView />
+            </div>
+          )}
+
+          {(activeTab === "trends" || activeTab === "officers") && (
             <div className="max-w-[1400px] mx-auto flex items-center justify-center h-64">
               <div className="text-center">
                 <div className="text-3xl mb-3">🏗️</div>
