@@ -211,7 +211,7 @@ export default function Index() {
               <div className="grid grid-cols-2 gap-6">
                 <RecentAssessments assessments={SEED_ASSESSMENTS} />
                 <div className="rounded-xl border border-border bg-card p-6 flex items-center justify-center text-muted-foreground text-sm">
-                  Portfolio heatmap — connect Lovable Cloud to enable real data
+                  Portfolio heatmap — connect backend to enable real data
                 </div>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function Index() {
                   {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Module
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Enable Lovable Cloud to unlock database-backed {activeTab} management
+                  Connect backend to unlock database-backed {activeTab} management
                 </p>
               </div>
             </div>
