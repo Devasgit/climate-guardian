@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0f172a"/>
+      <stop offset="55%"  stop-color="#1e2d50"/>
+      <stop offset="100%" stop-color="#0d3040"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#0d9488" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.06" stroke="#64748b" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#teal)"/>
+
+  <!-- Shield icon background glow -->
+  <circle cx="130" cy="200" r="70" fill="#0d9488" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(90, 155)">
+    <path d="M40 0 L80 14 L80 42 C80 65 62 83 40 90 C18 83 0 65 0 42 L0 14 Z"
+          fill="none" stroke="url(#teal)" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Leaf inside shield -->
+    <path d="M40 25 C40 25 25 40 28 55 C31 65 55 65 58 55 C61 40 40 25 40 25 Z"
+          fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="40" y1="55" x2="40" y2="70" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- RBI badge -->
+  <rect x="90" y="270" width="82" height="22" rx="11" fill="#0d9488" opacity="0.25"/>
+  <text x="131" y="285" font-family="system-ui, sans-serif" font-size="11" font-weight="700"
+        fill="#2dd4bf" text-anchor="middle" letter-spacing="0.5">RBI COMPLIANT</text>
+
+  <!-- Main headline -->
+  <text x="200" y="165" font-family="system-ui, -apple-system, sans-serif"
+        font-size="62" font-weight="800" fill="#ffffff" letter-spacing="-1">
+    Climate Credit
+  </text>
+  <text x="200" y="240" font-family="system-ui, -apple-system, sans-serif"
+        font-size="62" font-weight="800" fill="url(#teal)" letter-spacing="-1">
+    Risk Engine
+  </text>
+
+  <!-- Subtitle -->
+  <text x="200" y="295" font-family="system-ui, sans-serif" font-size="22"
+        fill="#94a3b8" letter-spacing="0.3">
+    AI-Powered Mortgage Climate Risk Assessment for Indian Banks
+  </text>
+
+  <!-- Divider line -->
+  <rect x="200" y="320" width="600" height="2" rx="1" fill="url(#teal)" opacity="0.4"/>
+
+  <!-- Stats pills -->
+  <g transform="translate(200, 345)">
+    <!-- Flood -->
+    <rect x="0" y="0" width="155" height="36" rx="18" fill="#1e3a5f" stroke="#1e4d8b" stroke-width="1.5"/>
+    <circle cx="22" cy="18" r="8" fill="#3b82f6" opacity="0.3"/>
+    <text x="22" y="23" font-family="system-ui, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle">🌊</text>
+    <text x="50" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">Flood Risk</text>
+
+    <!-- Heat -->
+    <rect x="170" y="0" width="170" height="36" rx="18" fill="#3b1f0a" stroke="#7c3018" stroke-width="1.5"/>
+    <text x="192" y="23" font-family="system-ui, sans-serif" font-size="14" fill="#fb923c" text-anchor="middle">🌡</text>
+    <text x="220" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#fdba74">Heat Stress</text>
+
+    <!-- Sea Level -->
+    <rect x="355" y="0" width="190" height="36" rx="18" fill="#0c2a3a" stroke="#0e4d66" stroke-width="1.5"/>
+    <text x="377" y="23" font-family="system-ui, sans-serif" font-size="14" fill="#22d3ee" text-anchor="middle">🌊</text>
+    <text x="402" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#67e8f9">Sea-Level Rise</text>
+
+    <!-- Water -->
+    <rect x="560" y="0" width="185" height="36" rx="18" fill="#1e113a" stroke="#4c1d8e" stroke-width="1.5"/>
+    <text x="582" y="23" font-family="system-ui, sans-serif" font-size="14" fill="#a78bfa" text-anchor="middle">💧</text>
+    <text x="607" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#c4b5fd">Water Scarcity</text>
+  </g>
+
+  <!-- Right chart area -->
+  <g transform="translate(820, 120)">
+    <!-- Chart area fill -->
+    <polygon points="0,280 50,230 100,240 150,190 200,195 250,140 300,150 330,90 330,320 0,320"
+             fill="url(#chart)"/>
+    <!-- Chart line -->
+    <polyline points="0,280 50,230 100,240 150,190 200,195 250,140 300,150 330,90"
+              fill="none" stroke="url(#teal)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"
+              filter="url(#glow)"/>
+    <!-- Milestone dots -->
+    <circle cx="0"   cy="280" r="6" fill="#0d9488" stroke="white" stroke-width="2"/>
+    <circle cx="165" cy="187" r="6" fill="#f59e0b" stroke="white" stroke-width="2"/>
+    <circle cx="330" cy="90"  r="6" fill="#ef4444" stroke="white" stroke-width="2"/>
+    <!-- Year labels -->
+    <text x="0"   y="308" font-family="system-ui, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">2025</text>
+    <text x="165" y="308" font-family="system-ui, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">2035</text>
+    <text x="330" y="308" font-family="system-ui, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">2045</text>
+    <!-- Chart label -->
+    <text x="165" y="30" font-family="system-ui, sans-serif" font-size="14" fill="#475569" text-anchor="middle">20-Year Risk Projection (SSP2-4.5)</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="575" width="1200" height="55" fill="#0a0f1e" opacity="0.7"/>
+  <text x="44" y="608" font-family="system-ui, sans-serif" font-size="15" fill="#334155">
+    Powered by IMD · IPCC AR6 · NATMO · CWMI · Sentinel-2 SAR
+  </text>
+  <text x="1160" y="608" font-family="system-ui, sans-serif" font-size="14" fill="#334155" text-anchor="end">
+    BRSR · SDG 13 · TCFD Aligned
+  </text>
+</svg>
